@@ -1,0 +1,248 @@
+.hero {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    &::before {
+        position: absolute;
+
+        content: '';
+
+        width: 300px;
+        height: 300px;
+
+        left: -369px;
+        bottom: 200px;
+        
+        background-color: rgba(0, 41, 255, 0.4);
+        filter: blur(95.8743px);
+    }
+
+    &__info {
+        position: relative;
+
+        padding: 202px 0 0 0;
+
+        display: flex;
+        flex-direction: column;
+
+        h1 {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px;
+            
+            text-transform: uppercase;
+            
+            color: var(--white);
+        }
+
+        p {
+            margin-top: 24px;
+            margin-bottom: 32px;
+
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 21px;
+
+            color: rgba(253, 253, 253, 0.75);
+        }
+
+        &::before {
+            position: absolute;
+
+            content: '';
+
+            width: 274px;
+            height: 274px;
+
+            top: 0;
+            left: -320px;
+            
+            background-color: var(--yellow-400);
+            mix-blend-mode: screen;
+            filter: blur(75px);
+        }
+
+        &-img-wrap {
+            position: absolute;
+    
+            top: -18px;
+            right: -98px;
+
+            width: 380px;
+            height: 380px;
+    
+            border-radius: 50%;
+            z-index: -1;
+            background: url(../../images/masks/hero.png) center/cover no-repeat;
+            box-shadow: inset 25px 0px 36px 46px var(--bg-c);
+    
+            overflow: hidden;
+            opacity: 0.8;
+        }
+    }
+
+    &__statistics {
+        margin-top: 50px;
+
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        column-gap: 12px;
+        row-gap: 32px;
+    }
+
+    &__statistics-item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        gap: 2px;
+
+        width: 165px;
+
+        strong {
+            font-weight: 600;
+            font-size: 40px;
+            line-height: 48px;
+
+            color: var(--white);
+        }
+
+        span {
+            font-weight: 200;
+            font-size: 18px;
+            line-height: 23px;
+
+            color: var(--white);
+            opacity: 0.7;
+        }
+    }
+
+    &__company {
+        margin-top: 40px;
+
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+
+        column-gap: 10px;
+        row-gap: 20px;
+    }
+
+    &__company-item {
+        width: 97px;
+        height: 48px;
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@media (min-width: 768px) {
+    .hero {
+        &__info {
+            width: 50%;
+
+            &-img-wrap {
+                right: -500px;
+                left: unset;
+
+                width: 700px;
+                height: 700px;
+    
+                @media (min-width: 1024px) {
+                    top: -43px;
+                }
+            }
+        }
+
+        &__statistics {
+            margin-top: 81px;
+        }
+
+        &__statistics,
+        &__company {
+            justify-content: flex-start;
+        }
+
+        &__company {
+            column-gap: 27px;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    .hero {
+        height: 834px;
+
+        &__info {
+            margin-top: 0;
+            padding: 202px 0 0 272px;
+
+            width: 51%;
+
+            h1 {
+                font-size: 68px;
+                line-height: 120%;
+            }
+
+            p {
+                font-size: 22px;
+                line-height: 120%;
+            }
+
+            .button-m {
+                width: 405px;
+                a {
+                    width: 100%;
+                }
+            }
+
+            &::before {
+                width: 500px;
+                height: 500px;
+                top: -312px;
+                left: -544px;
+
+                filter: blur(150px);
+            }
+
+            &-img-wrap {
+                top: -29px;
+                right: -732px;            
+
+                width: 850px;
+                height: 850px;
+            }
+        }
+
+        &__statistics,
+        &__company {
+            padding-left: 259px;
+        }
+
+        &__statistics-item {
+            strong {
+                font-size: 64px;
+                line-height: 77px;
+            }
+
+            span {
+                font-size: 18px;
+                line-height: 130%;
+            }
+        }
+    }
+}

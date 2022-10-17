@@ -1,0 +1,51 @@
+// breakpoints
+$phone-s: 365;
+$phone-m: 414;
+$tablet: 767;
+$desktop: 1024;
+
+// fonts
+$font-main: "Gilroy", sans-serif;
+$font-raleway: "Raleway";
+$font-poppins: "Poppins";
+
+$max-width: 1140px;
+
+:root,
+::after,
+::before {
+  --black: #000000;
+  --white: #FFFFFF;
+
+  --primary-500: #F2C94C;
+  --bg-c: #0F0F0F;
+
+  --yellow-200: #FF8D23;
+  --yellow-300: #FF8D23;
+  --yellow-400: #FFA63D;
+
+  --blue-200: #0029FF;
+
+  --gray-50: #FAFAFA;
+  --gray-700: #303030;
+  --gray-600: #141412;
+  --gray-500: #626262;
+  
+  --gray-400: #909090;
+  --gray-300: #CDCDCD;
+  --gray-200: #EEEEEE;
+  --gray-100: #FDFDFD;
+
+  // border radius
+  --br--8: 8px;
+  --br--10: 10px;
+  --br--15: 15px;
+  --br--20: 20px;
+  --br--26: 26px;
+  --br--30: 30px;
+  --br--41: 41px;
+
+  // opacity
+  --op-7: 0.7;
+  --op-8: 0.8;
+}

@@ -1,0 +1,19 @@
+@import "libs/_media";
+@import "libs/_funcs";
+@import "libs/_mixins";
+@import "libs/_reset";
+
+//uncomment it if sprites used
+@import "libs/sprite";
+
+//uncomment it if SVGSprite generator in sprite mode
+// @import "partials/sprite-svg"
+
+@import "partials/font-icons";
+
+@import "partials/variables";
+@import "partials/typography";
+@import "partials/common";
+@import "partials/base";
+
+@import "components/index";
